@@ -19,7 +19,7 @@ describe('index', () => {
       done()
     })
   })
-      console.warn("hi or what")
+     
   it('calls console.log()', done => {
     const spy = expect.spyOn(console, 'log').andCallThrough()
     console.log("Calling the log")
@@ -34,7 +34,7 @@ describe('index', () => {
   
   it('calls console.warn()', done => {
     const spy = expect.spyOn(console, 'warn').andCallThrough()
-      console.warn("hi")
+      console.warn("Calling the warning")
     jsdom.env(html, [src], {
       virtualConsole: jsdom.createVirtualConsole().sendTo(console)
     }, (err, window) => {
