@@ -19,7 +19,7 @@ describe('index', () => {
       done()
     })
   })
-
+  console.warn("hi")
   it('calls console.log()', done => {
     const spy = expect.spyOn(console, 'log').andCallThrough()
     console.log("What")
@@ -31,7 +31,7 @@ describe('index', () => {
       done()
     })
   })
-  consoe.warn('where')
+  
   it('calls console.warn()', done => {
     const spy = expect.spyOn(console, 'warn').andCallThrough()
 
