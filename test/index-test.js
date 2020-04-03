@@ -7,7 +7,7 @@ const path = require('path')
 describe('index', () => {
   const html = '<div></div>'
   const src = path.resolve(__dirname, '..', 'index.js')
-
+    console.warn("hi")
   it('calls console.error()', done => {
     const spy = expect.spyOn(console, 'error').andCallThrough()
     console.error("Hi")
@@ -19,7 +19,7 @@ describe('index', () => {
       done()
     })
   })
-  console.warn("hi")
+
   it('calls console.log()', done => {
     const spy = expect.spyOn(console, 'log').andCallThrough()
     console.log("What")
