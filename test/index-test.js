@@ -19,7 +19,7 @@ describe('index', () => {
       done()
     })
   })
-
+      console.warn("hi or what")
   it('calls console.log()', done => {
     const spy = expect.spyOn(console, 'log').andCallThrough()
     console.log("What")
